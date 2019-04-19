@@ -35,7 +35,7 @@ const setupBooks = (data) => {
       const li = `
         <li class="border">
           <div class="collapsible-header grey lighten-4"><b>Title:</b>&emsp; ${book.title}   <input type="button" class="d-block mr-0 ml-auto" value="Edit"> 
-          &emsp;<button>&emsp;<i class="fa fa-trash-o" style="font-size:24px;"></i></button>
+          &emsp;<button>&emsp;<i class="fa fa-trash-o"></i></button>
           </div>
           <div class="collapsible-body white"><b>Author:</b> ${book.author}</div>
           <div class="collapsible-body white"><b>ISBN: </b> ${book.ISBN}</div>
