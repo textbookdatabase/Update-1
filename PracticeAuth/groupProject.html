@@ -8,6 +8,7 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <title>FireBase Authentication</title>
@@ -16,32 +17,34 @@
 
   <!-- NAVBAR -->
   <nav class="z-depth-0 grey darken-4 left">
-    <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">
-        <img src="img/dT.jpg" style="width: 180px; margin-top: 10px;">
-      </a>
-      <span>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="logged-in" style="display: none; background-color:#fbc02d;">
-            <a href="#" class="black-text modal-trigger" data-target="modal-account">Account</a>
-          </li>
-          <li class="logged-in" style="display: none; background-color:#fbc02d;">
-            <a href="#" class="black-text" id="logout">Logout</a>
-          </li>
-
-          <li class="logged-in" style="display: none; background-color:#fbc02d;">
-            <a href="#" class="black-text modal-trigger" data-target="modal-create">Add Textbook</a>
-          </li>
-          <li class="logged-in" style="display: none; background-color:rgb(119, 211, 202);">
-              <a href="#" class="black-text modal-trigger" data-target="modal-advanced">Advanced Search</a>
-          </li>
-          <li class="logged-out" style="display: none; background-color:#fbc02d;">
-            <a href="#" class="black-text modal-trigger" data-target="modal-login">Login</a>
-          </li>
-        </span>
-      </ul>
-    </div>
-  </nav>
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">
+          <img src="img/dT.jpg" style="width: 180px; margin-top: 10px;">
+        </a>
+        <span>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="logged-in" style="display: none; background-color:#fbc02d;">
+              <a href="#" class="black-text modal-trigger" data-target="modal-account">Account</a>
+            </li>
+            <li class="logged-in" style="display: none; background-color:#fbc02d;">
+              <a href="#" class="black-text" id="logout">Logout</a>
+            </li>
+  
+            <li class="logged-in" style="display: none; background-color:#fbc02d;">
+              <a href="#" class="black-text modal-trigger" data-target="modal-create">Add Textbook</a>
+            </li>
+            <li class="logged-in" style="display: none; background-color:rgb(119, 211, 202);">
+                <a href="#" class="black-text modal-trigger" data-target="modal-advanced">Advanced Search</a>
+            </li>
+            <li class="logged-out" style="display: none; background-color:#fbc02d;">
+              <a href="#" class="black-text modal-trigger" data-target="modal-login">Login</a>
+            </li>
+          </span>
+        </ul>
+      </div>
+    </nav>
+  
+  
 
   <!-- ADVANCED SEARCH MODAL -->
   <div id="modal-advanced" class="modal">
@@ -147,12 +150,6 @@
         </div>
       </div>
     </div>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  
   <!-- BOOK LIST -->
   <div class="container" style="margin-top: 40px;">
     <ul class="collapsible z-depth-0 books" style="border: none;">
@@ -178,9 +175,6 @@
   //Make auth and firestore references
   const auth = firebase.auth();
   const db = firebase.firestore();
-
-  // update firestore settings
-  //db.settings({timestampsInSnapshots: true});
 </script>
  
   <!-- Compiled and minified JavaScript -->
@@ -189,4 +183,3 @@
   <script src="scripts/index.js"></script>
 </body>
 </html>
-
