@@ -33,20 +33,23 @@ const setupBooks = (data) => {
     data.forEach(doc => {
       const book = doc.data();
       const li = `
-        <li>
-          <div class="collapsible-header grey lighten-4"> ${book.title} </div>
-          <div class="collapsible-body white"> ${book.author} </div>
-          <div class="collapsible-body white"> ${book.ISBN} </div>
-          <div class="collapsible-body white"> ${book.Term} </div>
+        <li class="border">
+          <div class="collapsible-header grey lighten-4"><b>Title:</b>&emsp; ${book.title}   <input type="button" class="d-block mr-0 ml-auto" value="Edit"> 
+          <button>X</button>
+          </div>
+          <div class="collapsible-body white"><b>Author:</b> ${book.author}</div>
+          <div class="collapsible-body white"><b>ISBN: </b> ${book.ISBN}</div>
+          <div class="collapsible-body white"><b>Term: </b> ${book.Term}</div>
+          <div class="collapsible-body white"><b>Edition:</b> ${book.Edition}</div>
+          <div class="collapsible-body white"><b>Publisher:</b> ${book.Publisher}</div>
         </li>
       `;
       html += li;
     });
     bookList.innerHTML = html
   } else {
-    bookList.innerHTML = '<h5 class="center-align" style="color: white;">Login for Advanced Search</h5>';
-  }
-  
+    bookList.innerHTML = '<h5 class="center-align" style="color: white;">Log In for Advanced Search</h5>';
+  } 
 
 };
 
