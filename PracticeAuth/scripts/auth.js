@@ -25,7 +25,9 @@ createForm.addEventListener('submit', (e) => {
     title: createForm['title'].value,
     author: createForm['author'].value,
     ISBN: createForm['ISBN'].value,
-    Term: createForm['Term'].value
+    Term: createForm['Term'].value,
+    Edition: createForm['Edition'].value,
+    Publisher: createForm['Publisher'].value
 
   }).then(() => {
     // close the create modal & reset form
@@ -62,3 +64,4 @@ loginForm.addEventListener('submit', (e) => {
   });
 
 });
+
