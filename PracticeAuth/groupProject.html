@@ -15,11 +15,12 @@
 <body class="grey darken-4">
 
   <!-- NAVBAR -->
-  <nav class="z-depth-0 grey darken-4">
+  <nav class="z-depth-0 grey darken-4 left">
     <div class="nav-wrapper container">
       <a href="#" class="brand-logo">
         <img src="img/dT.jpg" style="width: 180px; margin-top: 10px;">
       </a>
+      <span>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="logged-in" style="display: none; background-color:#fbc02d;">
             <a href="#" class="black-text modal-trigger" data-target="modal-account">Account</a>
@@ -62,6 +63,14 @@
         <div class="input-field">
           <textarea id="Term" class="materialize-textarea" required></textarea>
           <label for="Term">Term</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="Edition" required>
+          <label for="Edition">Edition</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="Publisher" required>
+          <label for="Publisher">Publisher</label>
         </div>
         <button class="btn yellow darken-2 z-depth-0">Search</button>
       </form>
@@ -114,6 +123,14 @@
               <div class="input-field">
                   <input type="text" id="Term" required>
                   <label for="Term">Term</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="Edition" required>
+                  <label for="Edition">Edition</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="Publisher" required>
+                  <label for="Publisher">Publisher</label>
                 </div>
             <button class="btn yellow darken-2 z-depth-0">Add</button>
           </form>
@@ -172,3 +189,4 @@
   <script src="scripts/index.js"></script>
 </body>
 </html>
+
