@@ -40,8 +40,6 @@ const setupBooks = (data) => {
           <div class="collapsible-body white"><b>Author:</b> ${book.author}</div>
           <div class="collapsible-body white"><b>ISBN: </b> ${book.ISBN}</div>
           <div class="collapsible-body white"><b>Term: </b> ${book.Term}</div>
-          <div class="collapsible-body white"><b>Edition:</b> ${book.Edition}</div>
-          <div class="collapsible-body white"><b>Publisher:</b> ${book.Publisher}</div>
         </li>
       `;
       html += li;
