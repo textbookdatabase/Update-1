@@ -10,8 +10,10 @@ auth.onAuthStateChanged(user => {
 });
   } else {
     console.log('user logged out');
-    setupUI();
-    setupBooks([]);
+   db.collection('bookstest').onSnapshot(snapshot => {
+    setupBooks(snapshot.docs);
+    setupUI('');
+});
   }
 });
 
@@ -26,8 +28,6 @@ createForm.addEventListener('submit', (e) => {
     author: createForm['author'].value,
     ISBN: createForm['ISBN'].value,
     Term: createForm['Term'].value,
-    Edition: createForm['Edition'].value,
-    Publisher: createForm['Publisher'].value
 
   }).then(() => {
     // close the create modal & reset form
@@ -64,4 +64,3 @@ loginForm.addEventListener('submit', (e) => {
   });
 
 });
-
